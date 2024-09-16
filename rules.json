@@ -1,0 +1,22 @@
+[
+    {
+        "id": "block_example_com",
+        "condition": {
+            "urlFilter": ".*://*.example.com/.*",
+            "resourceTypes": ["main_frame"]
+        },
+        "action": {
+            "type": "block"
+        }
+    },
+    {
+        "id": "block_test_com",
+        "condition": {
+            "urlFilter": ".*://*.test.com/.*",
+            "resourceTypes": ["main_frame"]
+        },
+        "action": {
+            "type": "block"
+        }
+    }
+]

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bastion Web Blocker</title>
+    <style>
+        body {
+            width: 200px;
+            background-color: black; 
+            color: white; 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+        }
+        img {
+            width: 150px; 
+            margin-bottom: 10px; 
+        }
+        input {
+            width: 80%;
+            margin-bottom: 10px;
+            background-color: black; 
+            color: white; 
+            border: 1px solid white;
+            padding: 5px; 
+        }
+        button {
+            background-color: black; 
+            color: white; 
+            border: 1px solid white; 
+            padding: 5px 10px; 
+            cursor: pointer; 
+            margin: 5px;
+        }
+        button:hover {
+            background-color: white; 
+            color: black; 
+        }
+        .bar {
+            height: 2px; 
+            background-color: white; 
+            margin: 10px 0; 
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" width="150px;">
+    <h1>Block a Website</h1>
+    <input type="text" id="siteInput" placeholder="Enter website (e.g., example.com)">
+    <button id="adminButton">Admin</button>
+    <button id="blockButton">Block</button>
+    <div id="passwordContainer" style="display: none;">
+        <input type="password" id="adminPasswordInput" placeholder="Enter Admin Password">
+        <button id="setPasswordButton">Set Password</button>
+    </div>
+    <div id="blockedSitesContainer"></div> 
+    <script src="popup.js"></script>
+</body>
+</html>
